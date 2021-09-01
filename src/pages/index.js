@@ -1,22 +1,13 @@
 import * as React from "react"
 import '../styles/global.css';
 
+import Hero from "../components/hero/hero";
+
 // markup
 const IndexPage = () => {
   return (
-    <div class="grid grid-cols-12 h-screen">
-      <div>Hello</div>
-      <div>Hai</div>
-      <div>Hello</div>
-      <div>Hai</div>
-      <div>Hello</div>
-      <div>Hai</div>
-      <div>Hello</div>
-      <div>Hai</div>
-      <div>Hello</div>
-      <div>Hai</div>
-      <div>Hello</div>
-      <div>Hai</div>
+    <div class="">
+      <Hero />
     </div>
   )
 }
