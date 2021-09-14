@@ -17,9 +17,13 @@
   "dependencies": {
     "autoprefixer": "^10.3.3",
     "gatsby": "^3.13.0",
+    "gatsby-plugin-image": "^1.13.0",
     "gatsby-plugin-manifest": "^3.13.0",
     "gatsby-plugin-postcss": "^4.13.0",
+    "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-plugin-sitemap": "^4.9.0",
+    "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-transformer-sharp": "^3.13.0",
     "postcss": "^8.3.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
