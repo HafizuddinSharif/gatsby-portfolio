@@ -1,6 +1,6 @@
 import React from 'react'
 
-const button = ({text, isFill, isBgDark}) => {
+const button = ({text, isFill, isBgDark, link}) => {
 
     const style = {
         backgroundColor: isFill ? "#30ACFF" : '',
@@ -9,9 +9,9 @@ const button = ({text, isFill, isBgDark}) => {
     }
 
     return (
-        <div className="col-span-3 lg:col-span-2 rounded-full py-2 lg:mt-4" style={style}>
+        <a className="col-span-3 lg:col-span-2 rounded-full py-2 lg:mt-4 cursor-pointer" style={style} href={link}>
             <p className="font-bold  text-center">{text}</p>
-        </div>
+        </a>
     )
 }
 
