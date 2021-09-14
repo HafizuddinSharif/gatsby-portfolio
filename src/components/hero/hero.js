@@ -5,12 +5,8 @@ import Banner from './banner/banner'
 
 const hero = () => {
 
-    const style = {
-        backgroundColor: '#2E2E2E',
-    }
-
     return (
-        <div style={style} className="h-screen ">
+        <div className="h-screen bg-gray-900 w-full">
             <NavBar />
             <Banner />
         </div>
