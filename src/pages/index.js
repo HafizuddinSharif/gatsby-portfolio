@@ -5,6 +5,7 @@ import Hero from "../components/hero/hero";
 import BriefIntro from "../components/briefintro/briefintro";
 import TechStack from "../components/techstack/techstack";
 import Projects from "../components/projects/projects";
+import Contact from "../components/contact/contact";
 
 
 // Importing icons
@@ -63,11 +64,13 @@ const IndexPage = () => {
   const projectList = []
 
   return (
-    <div class="">
+    <div className="">
+      {/* Page section */}
       <Hero />
       <BriefIntro />
       <TechStack techList={techList} />
       <Projects projectList={projectList} />
+      <Contact />
     </div>
   )
 }

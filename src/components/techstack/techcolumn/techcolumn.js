@@ -15,7 +15,7 @@ const techcolumn = ({ title, techList }) => {
         <div className="pt-10 pb-20 col-span-1 grid-rows-2">
             <h2 className="pb-20 text-center relative px-2"><span className="relative z-10 font-bold text-3xl">{title}</span><span className="mx-auto absolute bg-secondary z-0 transform -skew-y-12 rotate-12" style={makeUnderline}></span></h2>
             <div className="grid grid-cols-3 mx-12 gap-9">
-                { techList.map( item => <img className="m-auto h-12 w-12" src={item.iconSrc} alt={item.name} ></img> )}
+                { techList.map( (item, index) => <img className="m-auto h-12 w-12" key={index} src={item.iconSrc} alt={item.name} ></img> )}
             </div>
         </div>
     )

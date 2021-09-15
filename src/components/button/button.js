@@ -10,7 +10,7 @@ const button = ({text, isFill, isBgDark, link}) => {
 
     return (
         <a className="col-span-3 lg:col-span-2 rounded-full py-2 lg:mt-4 cursor-pointer" style={style} href={link}>
-            <p className="font-bold  text-center">{text}</p>
+            <p className="font-bold text-center">{text}</p>
         </a>
     )
 }
