@@ -3,10 +3,28 @@ import Button from '../button/button'
 
 import emailjs from 'emailjs-com'
 
+import { useSpring , animated } from 'react-spring'
+
 const Contact = () => {
 
-    const [appear, setAppear] = useState(false) 
+    // useState declarations
+    const [appear, setAppear] = useState(true) 
 
+    // animations
+    const animateFadeIn = useSpring({
+        pause: appear, 
+        to: { opacity: 1 }, 
+        from: { opacity: 0 },
+        delay: 1000,
+    })
+
+    const animateFadeOut = useSpring({
+        pause: appear,
+        to: { opacity: 0 }, 
+        from: { opacity: 1 },
+    })
+
+    // functions
     const sendEmail = e => {
 
         e.preventDefault();
@@ -29,6 +47,7 @@ const Contact = () => {
 
     }
 
+    // inline styles
     const buttonStyle = {
         backgroundColor: "#30ACFF",
         color: "white",
@@ -41,23 +60,26 @@ const Contact = () => {
             <div className="my-auto w-full lg:w-1/2">
 
                 <h1 className="font-bold text-2xl mb-6">Contact me!</h1>
-                { appear && <h1 className="font-bold text-2xl mb-6">I am HERE!</h1> }
 
-                <form className="grid grid-cols-2 gap-y-4" onSubmit={sendEmail}>
+                <form className="grid grid-cols-2 gap-y-4 relative" onSubmit={sendEmail}>
 
-                    <label name="name" className="col-span-2" >Name</label>
-                    <input className="text-black col-span-2 py-1 px-2" name="user_name"></input>
+                    <label name="name" className="col-span-2 text-secondary font-bold" required>Name</label>
+                    <input type="text" className="text-black col-span-2 py-1 px-2 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" name="user_name" ></input>
 
-                    <label name="email" className="col-span-2" >Email</label>
-                    <input className="text-black col-span-2 py-1 px-2" name="user_email"></input>
+                    <label name="email" className="col-span-2 text-secondary font-bold" required>Email</label>
+                    <input type="email" className="text-black col-span-2 py-1 px-2 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" name="user_email" ></input>
 
-                    <label name="message" className="col-span-2" >Short Message</label>
-                    <textarea className="text-black col-span-2 py-1 px-2" name="message"></textarea>
+                    <label name="message" className="col-span-2 text-secondary font-bold" required>Short Message</label>
+                    <textarea className="text-black col-span-2 py-1 px-2 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" name="message"></textarea>
 
-                    <button type="submit" className="rounded-full py-2 mt-5 font-bold" style={buttonStyle}>Submit</button>
-                    <button className="rounded-full py-2 mt-5 font-bold" onClick={clickToAppear} style={buttonStyle}>Click here</button>
+                    <animated.div className="relative z-20" style={animateFadeOut}>
+                        <button type="submit" className="w-full rounded-full py-2 mt-5 font-bold" onClick={clickToAppear} style={buttonStyle}>Submit</button>
+                    </animated.div>
+
+                    <animated.div className="absolute z-10" style={{top: '320px', ...animateFadeIn}}>
+                        <p className="text-green-400 font-bold" >😎 Thank you! I'll get back to you around 1-2 days.</p>
+                    </animated.div>
                     
-
                 </form>
 
             </div>
