@@ -1,6 +1,8 @@
 import * as React from "react"
 import '../styles/global.css';
 
+import { Helmet } from "react-helmet"
+
 import Hero from "../components/hero/hero";
 import BriefIntro from "../components/briefintro/briefintro";
 import TechStack from "../components/techstack/techstack";
@@ -29,6 +31,11 @@ import figma from "../images/icons/other/figma.svg"
 import jira from "../images/icons/other/jira.svg"
 // import digitalocean from "../images/icons/other/digitalocean.svg"
 import wordpress from "../images/icons/other/wordpress.svg"
+
+// Importing project images
+import covid19 from "../images/projects/covid-19.png"
+import personalBlog from "../images/projects/personal-blog.png"
+import reportSystem from "../images/projects/report-system.png"
 
 // markup
 const IndexPage = () => {
@@ -61,10 +68,40 @@ const IndexPage = () => {
     ],
   }
 
-  const projectList = []
+  const projectList = [
+    {
+      name: "Covid-19 Tracker", 
+      description: "A React web app that allows you to know the total number of confirmed cases based on the selected countries. This app was built using React, COVID-19 API, Bootstrap, and deployed on Vercel.",
+      demoLink: "https://covid-tracker-woad-eight.vercel.app/",
+      codeLink: "https://github.com/HafizuddinSharif/covid-19-graph",
+      imageSrc: covid19, 
+      status: "online"
+    },
+    {
+      name: "Personal Blog", 
+      description: "A blog I created where I practice my writing skills and share my interest in computer science and technologies. I also place my sources for my Youtube here. This blog was built using Ghost CMS, deployed on DigitalOcean and written fully in Malay. ", 
+      demoLink: "https://blog.hafizuddinsharif.com/",
+      codeLink: "",
+      imageSrc: personalBlog,
+      status: "online"
+    },
+    {
+      name: "Report System", 
+      description: "This is the description of a project. You can also put what tech stack that you used", 
+      demoLink: "https://sihidayah-aduan.herokuapp.com/aduan",
+      codeLink: "https://github.com/HafizuddinSharif/SistemAduanSIHidayah",
+      imageSrc: reportSystem, 
+      status: "limited"
+    },
+  ]
 
   return (
     <div className="">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Hafizuddin Sharif</title>
+        </Helmet>
+
       {/* Page section */}
       <Hero />
       <BriefIntro />
