@@ -11,6 +11,7 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    "gatsby-plugin-anchor-links",
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

@@ -55,7 +55,7 @@ const Contact = () => {
     }
 
     return (
-        <div className="h-screen bg-gray-900 text-white px-5 py-24 lg:px-28 flex">
+        <div className="h-screen bg-gray-900 text-white px-5 py-24 lg:px-28 flex" id="contact">
 
             <div className="my-auto w-full lg:w-1/2">
 
