@@ -3,7 +3,7 @@ import React from 'react'
 const button = ({text, link}) => {
 
     return (
-        <a className="col-start-2 lg:col-start-1 lg:col-span-2 cursor-pointer" href={link}>
+        <a className="col-start-2 lg:col-start-1 lg:col-span-2 cursor-pointer" href={link} target="_blank" rel="noreferrer">
             <p className="font-light text-white text-center">{text}</p>
         </a>
     )

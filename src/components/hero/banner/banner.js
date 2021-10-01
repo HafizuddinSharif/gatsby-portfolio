@@ -1,15 +1,16 @@
 import React from 'react'
 import Intro from '../intro/intro'
 
-const banner = () => {
+const banner = ({ mainPic }) => {
     return (
         <div className="flex h-full px-5 lg:px-28">
             <div className="w-full my-auto grid grid-cols-1 lg:grid-cols-2">
-                <Intro />
+                <div className="order-2 lg:order-1 my-auto">
+                    <Intro />
+                </div>
                 {/* Replace with main picture */}
                 {/* <MainPicture /> */}
-                <div className="my-auto bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 h-1/2 w-100">
-                </div>
+                <img className="mx-auto w-full order-1 lg:order-2 px-10 max-w-2xl" src={mainPic}></img>
             </div>
         </div>
     )

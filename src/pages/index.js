@@ -37,6 +37,8 @@ import covid19 from "../images/projects/covid-19.png"
 import personalBlog from "../images/projects/personal-blog.png"
 import reportSystem from "../images/projects/report-system.png"
 
+import mainPic from "../images/main-pic.png"
+
 // markup
 const IndexPage = () => {
 
@@ -87,7 +89,7 @@ const IndexPage = () => {
     },
     {
       name: "Report System", 
-      description: "This is the description of a project. You can also put what tech stack that you used", 
+      description: "An online report system for a local Malaysian school that allows the user to do reports on damage on items in the school. This app was built using Vanilla JS, Express as the back-end, SQL as the database, deployed on Heroku.", 
       demoLink: "https://sihidayah-aduan.herokuapp.com/aduan",
       codeLink: "https://github.com/HafizuddinSharif/SistemAduanSIHidayah",
       imageSrc: reportSystem, 
@@ -103,7 +105,7 @@ const IndexPage = () => {
         </Helmet>
 
       {/* Page section */}
-      <Hero />
+      <Hero mainPic={mainPic}/>
       <BriefIntro />
       <TechStack techList={techList} />
       <Projects projectList={projectList} />

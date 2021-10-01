@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
+
 const button = ({text, isFill, isBgDark, link}) => {
 
     const style = {
@@ -10,9 +12,9 @@ const button = ({text, isFill, isBgDark, link}) => {
     
 
     return (
-        <a className="col-span-3 lg:col-span-2 rounded-full py-2 lg:mt-4 cursor-pointer" style={style} href={link} target="_blank" rel="noreferrer">
-            <p className="font-bold text-center">{text}</p>
-        </a>
+        <div className="col-span-3 lg:col-span-2 rounded-full py-2 lg:mt-4 cursor-pointer text-center" style={style} >
+            <AnchorLink to={link} className="font-bold" >{text}</AnchorLink>
+        </div>
     )
 }
 
