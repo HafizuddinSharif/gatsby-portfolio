@@ -7,7 +7,7 @@ import { useSpring , animated } from 'react-spring'
 const Contact = () => {
 
     // useState declarations
-    const [appear, setAppear] = useState(true) 
+    const [appear, setAppear] = useState(true)
 
     // animations
     const animateFadeIn = useSpring({
@@ -34,6 +34,8 @@ const Contact = () => {
           }, (error) => {
               console.log(error.text);
           });
+
+        clickToAppear()
     }
 
     const clickToAppear = () => {
@@ -62,17 +64,17 @@ const Contact = () => {
 
                 <form className="grid grid-cols-2 gap-y-4 relative" onSubmit={sendEmail}>
 
-                    <label name="name" className="col-span-2 text-secondary font-bold" required>Name</label>
-                    <input type="text" className="text-black col-span-2 py-1 px-2 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" name="user_name" ></input>
+                    <label for="user_name" className="col-span-2 text-secondary font-bold" >Name</label>
+                    <input type="text" className="text-black col-span-2 py-1 px-2 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" name="user_name" required></input>
 
-                    <label name="email" className="col-span-2 text-secondary font-bold" required>Email</label>
-                    <input type="email" className="text-black col-span-2 py-1 px-2 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" name="user_email" ></input>
+                    <label for="user_email" className="col-span-2 text-secondary font-bold" >Email</label>
+                    <input type="email" className="text-black col-span-2 py-1 px-2 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" name="user_email" required></input>
 
-                    <label name="message" className="col-span-2 text-secondary font-bold" required>Short Message</label>
-                    <textarea className="text-black col-span-2 py-1 px-2 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" name="message"></textarea>
+                    <label for="message" className="col-span-2 text-secondary font-bold" >Short Message</label>
+                    <textarea className="text-black col-span-2 py-1 px-2 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" name="message" required></textarea>
 
                     <animated.div className="relative z-20" style={animateFadeOut}>
-                        <button type="submit" className="w-full rounded-full py-2 mt-5 font-bold" onClick={clickToAppear} style={buttonStyle}>Submit</button>
+                        <button type="submit" className="w-full rounded-full py-2 mt-5 font-bold" style={buttonStyle}>Submit</button>
                     </animated.div>
 
                     <animated.div className="absolute z-10" style={{top: '320px', ...animateFadeIn}}>
