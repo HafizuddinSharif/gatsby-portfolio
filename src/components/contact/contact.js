@@ -1,5 +1,4 @@
 import React , { useState } from 'react'
-import Button from '../button/button'
 
 import emailjs from 'emailjs-com'
 
@@ -29,12 +28,12 @@ const Contact = () => {
 
         e.preventDefault();
 
-        // emailjs.sendForm(process.env.GATSBY_SERVICE_ID, process.env.GATSBY_TEMPLATE_ID, e.target, process.env.GATSBY_USER_ID)
-        //   .then((result) => {
-        //       console.log(result.text);
-        //   }, (error) => {
-        //       console.log(error.text);
-        //   });
+        emailjs.sendForm(process.env.GATSBY_SERVICE_ID, process.env.GATSBY_TEMPLATE_ID, e.target, process.env.GATSBY_USER_ID)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
     }
 
     const clickToAppear = () => {

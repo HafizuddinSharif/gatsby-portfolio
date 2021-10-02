@@ -83,7 +83,7 @@ const IndexPage = () => {
       name: "Personal Blog", 
       description: "A blog I created where I practice my writing skills and share my interest in computer science and technologies. I also place my sources for my Youtube here. This blog was built using Ghost CMS, deployed on DigitalOcean and written fully in Malay. ", 
       demoLink: "https://blog.hafizuddinsharif.com/",
-      codeLink: "",
+      codeLink: "#",
       imageSrc: personalBlog,
       status: "online"
     },

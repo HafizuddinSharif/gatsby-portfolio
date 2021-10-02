@@ -4,13 +4,16 @@ import { useSpring , animated } from 'react-spring'
 
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
+import { useWindowSize } from 'react-use'
+
 const Navbar = () => {
 
     // variables
-    const windowWidth = window.innerWidth
+    // const windowWidth = window.innerWidth
+    const { width, height } = useWindowSize();
 
     // useState declarations
-    const [appear, setAppear] = useState(windowWidth <= 1024 ? false : true) 
+    const [appear, setAppear] = useState(width <= 1024 ? false : true) 
 
     const dropdown = useSpring({
         transform: `perspective(100px) translateY(${appear ? 0 : -8}rem)`,
@@ -19,7 +22,7 @@ const Navbar = () => {
 
     const clickToAppear = () => {
 
-        if (windowWidth <= 1024) {
+        if (width <= 1024) {
             if (appear) {
                 setAppear(false)
             } else {

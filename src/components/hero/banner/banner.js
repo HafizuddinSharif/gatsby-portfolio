@@ -10,7 +10,7 @@ const banner = ({ mainPic }) => {
                 </div>
                 {/* Replace with main picture */}
                 {/* <MainPicture /> */}
-                <img className="mx-auto w-full order-1 lg:order-2 px-10 max-w-2xl" src={mainPic}></img>
+                <img className="mx-auto w-full order-1 lg:order-2 px-10 max-w-2xl" src={mainPic} alt="Sharif"></img>
             </div>
         </div>
     )
