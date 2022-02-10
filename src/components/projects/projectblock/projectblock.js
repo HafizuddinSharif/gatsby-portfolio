@@ -21,9 +21,7 @@ const projectblock = ({ title, description, imageSrc, demoLink, codeLink, status
                     <Button text="View code" isFill={false} isBgDark={false} link={codeLink} />
                 </div>
             </div>
-
             
-
         </div>
     )
 }

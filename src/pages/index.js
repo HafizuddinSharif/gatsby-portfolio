@@ -8,6 +8,7 @@ import BriefIntro from "../components/briefintro/briefintro";
 import TechStack from "../components/techstack/techstack";
 import Projects from "../components/projects/projects";
 import Contact from "../components/contact/contact";
+import Extra from "../components/extra/extra";
 
 
 // Importing icons
@@ -109,6 +110,7 @@ const IndexPage = () => {
       <BriefIntro />
       <TechStack techList={techList} />
       <Projects projectList={projectList} />
+      <Extra />
       <Contact />
     </div>
   )
