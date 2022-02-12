@@ -18,8 +18,9 @@ const extra = () => {
                   <img className="absolute lg:w-3/4 lg:h-auto w-1/2 right-0 bottom-0" src={yt3}></img>
               </div>
 
-              <div className="d-flex m-auto lg:pl-10">
-                  <p className="leading-loose">Growing up without knowing what Computer Science is and how Programming works, I decided to create a Youtube channel to help people understand what they actually were in my mother tongue.</p>
+              <div className="m-auto flex-col lg:pl-10">
+                  <p className="leading-loose mb-6" >Growing up <span className="font-bold">without knowing</span> what Computer Science is and how Programming works, I decided to create a Youtube channel to help people understand what they actually were in <span className="font-bold">my mother tongue</span>.</p>
+                  <a href="https://www.youtube.com/channel/UCAbwe9Gd8TD5lO_RvhT6ZgQ" rel="nonreferrer" target="_blank" className="transition ease-linear delay-150 hover:bg-white hover:text-red-500 border-2 border-red-500 border-solid bg-red-500 py-2 px-5 text-white rounded-md font-semibold inline">Go to my Youtube channel!</a>
               </div>
 
           </div>

@@ -34,7 +34,7 @@ const Navbar = () => {
 
     return (
 
-        <nav className="z-30 fixed lg:px-28 lg:py-5 grid gap-x-4 grid-cols-1 lg:grid-cols-12 lg:bg-gray-900 w-full">
+        <nav className="z-30 fixed lg:px-28 lg:py-3 grid gap-x-4 grid-cols-1 lg:grid-cols-12 lg:bg-gray-900 w-full">
 
             <div className="bottom-34 relative z-30 font-bold text-center text-white py-4 lg:py-0 lg:text-left lg:col-span-3 bg-gray-900 grid grid-cols-2 w-full px-5 lg:px-0">
                 <a href="#" className="text-left lg:col-span-2">Hafizuddin Sharif</a>

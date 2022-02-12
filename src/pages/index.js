@@ -103,7 +103,7 @@ const IndexPage = () => {
       <Helmet>
           <meta charSet="utf-8" />
           <title>Hafizuddin Sharif</title>
-        </Helmet>
+      </Helmet>
 
       {/* Page section */}
       <Hero mainPic={mainPic}/>
