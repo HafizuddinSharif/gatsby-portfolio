@@ -12,7 +12,7 @@ const intro = () => {
             <ButtonInPage text="Contact Me" isFill={true} isBgDark={true} link="/#contact" />
             {/* Will be edited */}
             {/* <Button text="My Services" isFill={false} isBgDark={true}/> */}
-            <UnderlineButton text="Resume 🔗" link="https://drive.google.com/file/d/1IHcmglw9SH4JqhGoo0kOD3qv1QMtb1vJ/view?usp=sharing"/>
+            <UnderlineButton text="Resume 🔗" link="https://drive.google.com/file/d/1KiDTkz3oIZ69WjlB3N78TCukwHGUp6Q8/view?usp=sharing"/>
         </div>
     )
 }
