@@ -9,13 +9,17 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const AccordionCust = ({ question , answer }) => {
 
     return (
-        <Accordion className="bg-gray-900">
+        <Accordion>
             <AccordionSummary
-            expandIcon={<ExpandMoreIcon className="text-white"/>}
+            expandIcon={<ExpandMoreIcon sx={{ color: 'white' }}/>}
             aria-controls="panel1a-content"
             id="panel1a-header"
+            sx={{ backgroundColor: 'rgb(17 24 39)' }}
             >
-            <Typography className="text-white font-bold">{ question }</Typography>
+            <Typography sx={{
+                fontWeight: 'bold',
+                color: 'white'
+            }} >{ question }</Typography>
             </AccordionSummary>
             <AccordionDetails className="bg-gray-100">
             <Typography className="">
