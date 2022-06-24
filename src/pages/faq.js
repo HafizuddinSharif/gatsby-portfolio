@@ -41,7 +41,13 @@ const Faq = () => {
 
             <Navbar />
 
-            <div className="py-24 w-3/4 m-auto text-white">
+            <div className="pt-32 w-3/4 m-auto text-center">
+                <h1 className="text-2xl font-bold">Frequently Asked Question 🤔</h1>
+                <p className="italic">Collection of questions that kept on coming in my DMs. All answers are based on my experience and knowledge unless stated.</p>
+            </div>
+            
+
+            <div className="py-20 w-3/4 m-auto text-white">
                 { faqItem.map( item => <Accordion question={item.question} answer={item.answer}/> ) }
             </div>
         </div>
