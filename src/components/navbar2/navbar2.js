@@ -71,12 +71,25 @@ const BukuPythonPemula = () => {
     return (
         <nav className="z-30 fixed lg:px-28 lg:py-3 grid gap-x-4 grid-cols-1 bg-gray-900 w-full">
 
-            <div className="bottom-34 relative z-30 font-bold text-center text-white py-4 lg:py-0 lg:text-left bg-gray-900 grid grid-cols-2 w-full px-5 lg:px-0">
-                <a href="/" className="text-left">Hafizuddin Sharif</a>
+            <div className="bottom-34 relative z-30 font-bold text-center text-white py-4 lg:py-0 lg:text-left bg-gray-900 grid grid-cols-2 lg:grid-cols-12 w-full px-5 lg:px-0">
+                <a href="/" className="text-left lg:col-span-2">Hafizuddin Sharif</a>
 
-                <div className="">
+                <button className="hidden lg:inline-block text-center lg:col-start-4 lg:col-span-2 lg:text-right text-white">
+                    <AnchorLink to="/#projects" >Projects</AnchorLink>
+                </button>
+                <button className="hidden lg:inline-block text-center lg:col-span-2 lg:text-right text-white">
+                    <AnchorLink to="/#contact" >Contact</AnchorLink>
+                </button>
+                <button className="hidden lg:inline-block text-center lg:col-span-2 lg:text-right text-white">
+                    <AnchorLink to="/faq" >FAQ</AnchorLink>
+                </button>
+                <button className="hidden lg:inline-block text-center lg:col-span-2 lg:text-right text-white">
+                    <AnchorLink to="/buku-python-pemula" >Buku</AnchorLink>
+                </button>
+
+                <div className="flex lg:hidden justify-end">
                     <React.Fragment key={'right'}>
-                        <Button onClick={toggleDrawer('right', true)}>Right</Button>
+                        <Button onClick={toggleDrawer('right', true)} sx={{ padding: 0, fontSize: 12, color: 'white' }}>Menu</Button>
                         <Drawer
                             anchor='right'
                             open={state['right']}
