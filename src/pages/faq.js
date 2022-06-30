@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet"
 
 // Components
 import Navbar from '../components/hero/navbar/navbar'
+import Navbar2 from '../components/navbar2/navbar2'
 import Accordion from "../components/accordion/accordion";
 
 const Faq = () => {
@@ -39,7 +40,7 @@ const Faq = () => {
                 <title>Frequently Asked Question</title>
             </Helmet>
 
-            <Navbar />
+            <Navbar2 />
 
             <div className="pt-32 w-3/4 m-auto text-center">
                 <h1 className="text-2xl font-bold">Frequently Asked Question 🤔</h1>
