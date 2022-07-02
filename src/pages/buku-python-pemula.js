@@ -20,7 +20,7 @@ const BukuPythonPemula = () => {
         <div>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Frequently Asked Question</title>
+                <title>Buku Python Pemula</title>
             </Helmet>
 
             {/* <Navbar /> */}
