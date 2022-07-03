@@ -10,6 +10,7 @@ import Accordion from "../components/accordion/accordion";
 import Navbar2 from '../components/navbar2/navbar2';
 import HeroPythonPemula from '../components/heroPythonPemula/heroPythonPemula'
 import PPBenefits from "../components/PPBenefits/PPBenefits";
+import PPSample from '../components/PPSample/PPSample';
 
 import mainPic from "../images/main-pic.png"
 
@@ -27,6 +28,7 @@ const BukuPythonPemula = () => {
             <Navbar2 />
             <HeroPythonPemula mainPic={ mainPic } />
             <PPBenefits />
+            <PPSample />
             
         </div>
     )
