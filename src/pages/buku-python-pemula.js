@@ -11,6 +11,7 @@ import Navbar2 from '../components/navbar2/navbar2';
 import HeroPythonPemula from '../components/heroPythonPemula/heroPythonPemula'
 import PPBenefits from "../components/PPBenefits/PPBenefits";
 import PPSample from '../components/PPSample/PPSample';
+import PPContents from "../components/PPContents/PPContents";
 
 import mainPic from "../images/main-pic.png"
 
@@ -29,6 +30,7 @@ const BukuPythonPemula = () => {
             <HeroPythonPemula mainPic={ mainPic } />
             <PPBenefits />
             <PPSample />
+            <PPContents />
             
         </div>
     )
