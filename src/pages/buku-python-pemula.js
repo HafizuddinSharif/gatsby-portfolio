@@ -12,6 +12,8 @@ import HeroPythonPemula from '../components/heroPythonPemula/heroPythonPemula'
 import PPBenefits from "../components/PPBenefits/PPBenefits";
 import PPSample from '../components/PPSample/PPSample';
 import PPContents from "../components/PPContents/PPContents";
+import PPFaq from "../components/PPFaq/PPFaq";
+import PPTestimony from "../components/PPTestimony/PPTestimony";
 
 import mainPic from "../images/main-pic.png"
 
@@ -31,6 +33,8 @@ const BukuPythonPemula = () => {
             <PPBenefits />
             <PPSample />
             <PPContents />
+            <PPFaq />
+            <PPTestimony />
             
         </div>
     )
