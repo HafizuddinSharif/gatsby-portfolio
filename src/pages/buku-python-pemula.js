@@ -14,6 +14,10 @@ import PPSample from '../components/PPSample/PPSample';
 import PPContents from "../components/PPContents/PPContents";
 import PPFaq from "../components/PPFaq/PPFaq";
 import PPTestimony from "../components/PPTestimony/PPTestimony";
+import PPCta from "../components/PPCta/PPCta";
+
+import Fab from '@mui/material/Fab';
+import Box from '@mui/material/Box';
 
 import mainPic from "../images/main-pic.png"
 
@@ -35,6 +39,10 @@ const BukuPythonPemula = () => {
             <PPContents />
             <PPFaq />
             <PPTestimony />
+            <PPCta />
+
+            
+
             
         </div>
     )
