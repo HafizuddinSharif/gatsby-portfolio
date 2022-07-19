@@ -60,7 +60,7 @@ const PPBenefits = () => {
         <div className="">
             <Lottie 
               options={resizeImageLottieOption}
-              width="115%"
+              width="90%"
               height="60%"
             />
             <h3 className="font-bold text-center mb-4 text-xl">Lengkap bersama contoh dan gambar</h3>
