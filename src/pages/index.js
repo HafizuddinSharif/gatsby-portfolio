@@ -103,6 +103,7 @@ const IndexPage = () => {
       <Helmet>
           <meta charSet="utf-8" />
           <title>Hafizuddin Sharif</title>
+          <meta name="description" content="I'm Sharif! I'm a Computer Science student. I provide service in teaching people how to code and also share my experience in life."></meta>
       </Helmet>
 
       {/* Page section */}

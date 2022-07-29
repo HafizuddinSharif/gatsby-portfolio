@@ -28,7 +28,8 @@ const BukuPythonPemula = () => {
         <div>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Buku Python Pemula</title>
+                <title>Buku Python Pemula | 100% Bahasa Melayu</title>
+                <meta name="description" content="Belajar programming Python dari 0, dalam 100% Bahasa Melayu. Sesuai untuk pemula! BELI SEKARANG!"></meta>
             </Helmet>
 
             {/* <Navbar /> */}
